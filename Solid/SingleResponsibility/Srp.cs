@@ -29,9 +29,6 @@ namespace Solid.SingleResponsibility
         }
     }
 
-
-
-
     // Good Way, not violating the single responsibility principle
     // Now we abstract the logger, so its just writing the error.
     class CustomerBetter
@@ -55,8 +52,6 @@ namespace Solid.SingleResponsibility
             File.WriteAllText(@"C:\Error.txt", error);
         }
     }
-
-
 
     // Even Better Way
     // Even better, the customer only knows how to add, and we
