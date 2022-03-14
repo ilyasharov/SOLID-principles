@@ -396,7 +396,7 @@ void UseDependencyInjectionForLogger()
 
 # Основные триггеры того, что принципы SOLID нарушены:
 
-- Оператор switch
-- Большое кол-во констант
-- new внутри методов класса
-- instanceof
+- [Оператор switch]
+- [Большое кол-во констант]
+- [new внутри методов класса]
+- [instanceof]
