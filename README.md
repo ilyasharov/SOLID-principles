@@ -11,6 +11,8 @@ Code examples of the SOLID principles.
 
 #### Single Responsibility Principle
 
+Каждый класс выполняет лишь одну задачу.
+
 > A class should take care of a Single Responsibility.
 
 - Code example [Srp.cs](Solid/SingleResponsibility/Srp.cs)
@@ -67,6 +69,9 @@ class FileLogger
 ```
 
 #### Open for Extension Closed for Modification
+
+O – The Open Closed Principle (Принцип открытости/закрытости)
+Классы должны быть открыты для расширения и закрыты для модификации.
 
 > Prefer extension over modification.
 
@@ -131,6 +136,8 @@ class AnotherCustomer : CustomerBetter
 ```
 
 #### Liskov Substitution Principle
+
+Наследники должны повторять поведение родительского класса и должны вести себя без сюрпризов.
 
 > Parent class should be able to refer child objects seamlessly during runtime polymorphism.
 
@@ -237,6 +244,8 @@ class AdheringToLiskovs
 
 #### Interface Segregation Principle
 
+Много мелких интерфейсов лучше, чем один большой.
+
 > Client should not be forced to use an interface, if it doesn't need it.
 
 - Code example [Isp.cs](Solid/InterfaceSegregation/Isp.cs)
@@ -295,6 +304,8 @@ void ManipulateCustomers()
 ```
 
 #### Dependency Inversion
+
+Зависимость на абстракциях, нет зависимостей на что-то конкретное.
 
 > High level modules should not depend on low-level modules, but should depend on abstraction.
 
@@ -379,3 +390,13 @@ void UseDependencyInjectionForLogger()
     customer.Add(new Database());
 }
 ```
+
+======================
+
+
+# Основные триггеры того, что принципы SOLID нарушены:
+
+> Оператор switch
+> Большое кол-во констант
+> new внутри методов класса
+> instanceof
